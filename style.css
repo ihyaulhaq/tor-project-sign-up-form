@@ -79,7 +79,7 @@ body{
   justify-content: space-between;
   width: 30%;
   height: 100vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(/asset/cover-photo.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url(asset/cover-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
