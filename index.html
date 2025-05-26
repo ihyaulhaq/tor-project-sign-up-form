@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover">
+        <div class="logo">
+            <img src="/asset/odin-lined.png" alt="logo_odin">
+            <p>odin</p>
+        </div>          
+        <P>
+            Photo by <a href="https://unsplash.com/@lexilaginess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Lexi Laginess</a> on <a href="https://unsplash.com/photos/a-lamp-post-in-a-garden-nt6N7BS3rPk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </P>      
+    </div>
+    <div class="form-container">
+        <h1>You are not real</h1>
+        <h2>Or did you ?</h2>
+        <form action="" method="post" class="form" onsubmit="return validateInput()">
+            <section class="the-form">
+                <div class="legend">
+                    <legend>let's do this!</legend>
+                </div>
+                    <label for="first-name">
+                        FIRST NAME
+                        <input type="text" id="first-name" required placeholder=""></input>
+                    </label>
+                    <label for="last-name">
+                        LAST NAME
+                        <input type="text" id="last-name" required placeholder=""></input>
+                    </label>
+                    <label for="email">
+                        EMAIL
+                        <input type="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required placeholder=" "></input>
+                    </label>
+                    <label for="phone">
+                        PHONE NUMBER
+                        <input type="tel" id="phone"  pattern="^\d+$" placeholder=""></input>
+                    </label>
+                    <label for="password">
+                        PASSWORD
+                        <input type="password" id="password" minlength="8" required placeholder=""></input>
+                    </label>        
+                    <label for="conf_password">
+                        CONFIRM PASSWORD
+                        <input type="password" id="conf_password" minlength="8" required placeholder=""></input>
+                    </label>        
+            </section>
+            <button type="submit">
+                Create Account
+            </button>
+            <p>Already have an account ? <a href="">Log in</a> </p>
+        </form>
+    </div>
+    <script src="/javascript.js"></script>
+</body>
+</html>
